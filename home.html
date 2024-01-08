@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Estonia">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>TacoMexico</title>
 </head>
 <body>
     <header>
-        <h1>Willkommen bei der TacoMexico</h1>
+        <h1>Willkommen bei TacoMexico</h1>
         <nav>
             <ul>
                 <li><a href="#TacoInfos">Unser Taco-Laden</a></li>
@@ -19,69 +20,73 @@
             </ul>
         </nav>
         <figure>
-            <img   src="img/tacos_and_drink_400x267.png" alt="Tacos und ein Getränk">
+            <img   src="img/tacos_and_drink_400x267.png" alt="Tacos und ein Getränk" title="Wir lieben Tacos" width="400" height="267">
             <figcaption>Wir bieten Ihnen Tacos und Getränke an.</figcaption>    
         </figure>
     </header>
     <hr>
     <main>
-        <h2 id="TacoInfos">Unser Taco-Laden</h2>
-        <p>Wir sind seit 2019 für Sie da und verwöhnen Sie mit den köstlichsten Varianten der südamerikanschen Spezialität. Für uns sind Tacos eine Passion und erfreuen uns, diese mit Ihnen teilen zu können.</p>
-        <h3>Schon gewusst?</h3>
-        <aside>
-            <details>
-                <summary>
-                    Seit wann werden Tacos in den USA genossen?
-                </summary>
-                <p>Schon eine lange Zeit. Kommen auch Sie in den Genuss!</p>
-            </details>
-        </aside>
+        <article id="TacoInfos">
+            <h2>Unser Taco-Laden</h2>
+            <p>Wir sind seit 2019 für Sie da und verwöhnen Sie mit den köstlichsten Varianten der südamerikanschen Spezialität. Für uns sind Tacos eine Passion und freuen uns, diese mit Ihnen teilen zu können.</p>
+
+            <aside>
+                <h3>Schon gewusst?</h3>
+                <details>
+                    <summary>
+                        Wo wurden Tacos erfunden?
+                    </summary>
+                    <p>Authentische mexikanische Tacos in ihrer modernen Form entwickelten sich irgendwann im 19. Jahrhundert in den boomenden mexikanischen Silberminen. Der erste wahre Typ von Taco war der "taco de minero" oder "miner's taco". Quelle: <cite><a href="https://unocasa.de/blogs/tips/history-of-tacos" target="_blank">Unocasa Blog</a></cite></p>
+                </details>
+            </aside>
+         </article>  
 
         <hr>
 
-        
-        <table id=menu>
-            <caption>Unser Menü</caption>
-            <thead>
-                <tr>
-                    <th scope="Tacos">Tacos</th>
-                    <th scope="Menge">Menge</th>
-                    <th scope="Preis">Preis</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="Crunchy" rowspan="3">Crunchy</th>
-                    <td>1</td>
-                    <td>1,50 €</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>3,00 €</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>4,00 €</td>
-                </tr>
+        <article id="menu">
+            <table>
+                <caption>Unser Menü</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tacos</th>
+                        <th scope="col">Menge</th>
+                        <th scope="col">Preis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Crunchy</th>
+                        <td>1</td>
+                        <td>1,50 €</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4,00 €</td>
+                    </tr>
 
-                <tr>
-                    <th scope="Soft" rowspan="3">Soft</th>
-                    <td>1</td>
-                    <td>1,50 €</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>3,00 €</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>4,00 €</td>
-                </tr>
-                <tr>
-                    <td colspan="3">Chips und Salsa 1,50 €</td>
-                </tr>
-            </tbody>
-        </table>
+                    <tr>
+                        <th scope="row" rowspan="3">Soft</th>
+                        <td>1</td>
+                        <td>1,50 €</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4,00 €</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Chips und Salsa 1,50 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
         <br>
         <br>
@@ -90,7 +95,9 @@
     </main>
     <footer>
         <a href="#">Nach oben</a>
+
         <hr>
+
         <p>&copy; TacoMexico 2024</p>
     </footer>
 </body>
