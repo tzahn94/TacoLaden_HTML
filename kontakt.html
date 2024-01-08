@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+</head>
+<body>
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="open.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <figure>
+            <img src="img/tacos_close_up_400x260.png" alt="Tacos">
+            <figcaption>Wir lieben Tacos!</figcaption>
+        </figure>
+        <hr>
+    </header>
+    <main>
+        <h2>Kontakt</h2>
+        
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend> Senden Sie uns Ihre Nachricht</legend>
+                <p>
+                    <label for="Vorname">Vorname</label>
+                    <input type="text" name="Vorname" id="Vorname">
+                </p>
+                <p>
+                    <label for="Nachname">Nachname</label>
+                    <input type="text" name="Nachname" id="Nachname">
+                </p>
+                <p>
+                    <label for="Nachricht">Nachricht</label>
+                    <textarea name="Nachricht" id="Nachricht" cols="30" rows="10" placeholder="Geben Sie hier Ihre Nachricht ein..."></textarea>
+                </p>
+            </fieldset>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Senden</button>
+        </form>
+    </main>
+    <footer>
+        <h2>Adresse</h2>
+        <address>
+            TacoMexico 
+            Blumenstraße 13
+            10179 Entenhausen
+        </address>
+        <p>Telefon: <a href="tel:+1234567890">+1234567890</a></p>
+        <br>
+        <a href="#">Nach oben</a>
+        <hr>
+        <p>&copy; TacoMexico 2024</p>
+    </footer>
+</body>
+</html>
