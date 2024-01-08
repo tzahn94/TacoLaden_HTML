@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Kontakt</title>
 </head>
 <body>
@@ -11,11 +13,11 @@
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="open.html">Kontakt</a></li>
+                <li><a href="open.html">Öffnungszeiten</a></li>
             </ul>
         </nav>
         <figure>
-            <img src="img/tacos_close_up_400x260.png" alt="Tacos">
+            <img src="img/tacos_close_up_400x260.png" alt="Tacos" title="Unsere leckeren Tacos" width="400" height="260">
             <figcaption>Wir lieben Tacos!</figcaption>
         </figure>
         <hr>
@@ -28,25 +30,30 @@
                 <legend> Senden Sie uns Ihre Nachricht</legend>
                 <p>
                     <label for="Vorname">Vorname</label>
-                    <input type="text" name="Vorname" id="Vorname">
+                    <input type="text" name="Vorname" id="Vorname" required>
                 </p>
                 <p>
                     <label for="Nachname">Nachname</label>
-                    <input type="text" name="Nachname" id="Nachname">
+                    <input type="text" name="Nachname" id="Nachname" required>
+                </p>
+                <p>
+                    <label for="Email">Email</label>
+                    <input type="email" name="EMail" id="EMail" required>
                 </p>
                 <p>
                     <label for="Nachricht">Nachricht</label>
-                    <textarea name="Nachricht" id="Nachricht" cols="30" rows="10" placeholder="Geben Sie hier Ihre Nachricht ein..."></textarea>
+                    <textarea name="Nachricht" id="Nachricht" cols="30" rows="10" placeholder="Geben Sie hier Ihre Nachricht ein..." required></textarea>
                 </p>
             </fieldset>
-                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Senden</button>
+                <button type="submit">Senden</button>
+                <button type="reset">Reset</button>
         </form>
     </main>
     <footer>
         <h2>Adresse</h2>
         <address>
-            TacoMexico 
-            Blumenstraße 13
+            TacoMexico <br>
+            Blumenstraße 13 <br>
             10179 Entenhausen
         </address>
         <p>Telefon: <a href="tel:+1234567890">+1234567890</a></p>
